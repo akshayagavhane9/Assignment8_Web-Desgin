@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wishlist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Wishlist</h1>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h2>Add New Task</h2>
+        <div class="row">
+            <div class="col-md-10">
+                <input type="text" id="new-task" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <button id="addTask" class="btn btn-primary">Add Task</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container todo-list box">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Incomplete Tasks</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="checkbox" class="pull-right">
+                        <label>Task Name 5</lable>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" class="pull-right">
+                        <label>Task Name 6</lable>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" class="pull-right">
+                        <label>Task Name 7</lable>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" class="pull-right">
+                        <label>Task Name 8</lable>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 complete-list box">
+                <h2>Completed Tasks</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><label>Cras justo odio </label><button
+                            class="delete btn btn-danger pull-right">Delete</button></li>
+                    <li class="list-group-item"><label>Cras justo odio</label><button
+                            class="delete btn btn-danger pull-right">Delete</button></li>
+                    <li class="list-group-item"><label>Cras justo odio </label>
+                        <button class="delete btn btn-danger pull-right">Delete</button>
+                    </li>
+                    <li class="list-group-item"><label>Cras justo odio</label><button
+                            class="delete btn btn-danger pull-right">Delete</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer class="container-fluid text-center">
+        <p>Footer</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
